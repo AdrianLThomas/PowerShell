@@ -7,11 +7,10 @@ if($7zip){
     Write-Verbose "7-Zip found"
     Write-Host "*** Adrian's Master Backup Script ***"
     Write-Host "Please enter a password to use for encryption"
-    $password = Read-Host -AsSecureString
 
     $startTime = Get-Date
 
-    & .\Backup-Directory.ps1 $7zLocation $backupPersonalSource $backupDestination "Personal" $password
+    & .\Backup-Directory.ps1 $7zLocation $backupPersonalSource $backupDestination "Personal"
 
     $endTime = Get-Date
 
