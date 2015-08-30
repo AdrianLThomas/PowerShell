@@ -2,8 +2,7 @@ Param(
     [string]$7zLocation,
     [string]$backupSource,
     [string]$backupDestination,
-    [string]$backupName,
-    [string]$password
+    [string]$backupName
 )
 
 
