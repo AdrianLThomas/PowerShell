@@ -6,7 +6,6 @@ $backupPersonalSource = "D:\Personal"
 if($7zip){
     Write-Verbose "7-Zip found"
     Write-Host "*** Adrian's Master Backup Script ***"
-    Write-Host "Please enter a password to use for encryption"
 
     $startTime = Get-Date
 
