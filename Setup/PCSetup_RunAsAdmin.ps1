@@ -38,6 +38,7 @@ $installCommands = #BEGIN
                      ;choco install -y visualstudiocode
                      ;choco install -y fiddler4
                      ;choco install -y sysinternals
+                     ;choco install -y git.install
 
                      # "Drivers"
                      ;choco install -y geforce-experience
@@ -72,5 +73,10 @@ Write-Host -ForegroundColor Yellow "The following needs installing manually:"
 foreach($installs in $manualInstalls){
     Write-Host -ForegroundColor Yellow "- " $installs
 }
+
+Write-Host "Installing customisations"
+Write-Host "Customising command line colour palette"
+git clone https://github.com/neilpa/cmd-colors-solarized %temp%\cmd-colors-solarized
+regedit /s %temp%\cmd-colors-solarized\solarized-dark.reg
 
 Write-Host -ForegroundColor Green "=== Setup Complete! ==="
