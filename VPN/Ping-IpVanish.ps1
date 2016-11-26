@@ -11,7 +11,7 @@ $serverList = $doc.serverList.server.name
 
 # Get all servers within capacity
 $serverList = $doc.serverList.server | 
-              where {#$_.capacity -lt $capacityLimitPercentage -and
+              where {$_.capacity -lt $capacityLimitPercentage -and
                      $_.status -eq 1 -and
                      $_.visible -eq 1 -and
                      $minLong -lt $_.lng -and
