@@ -49,6 +49,7 @@ $installCommands = #BEGIN
                      ;choco install -y battle.net -y
                      ;Start-Process "http://support.logitech.com/software/gaming-software" #For the G27
                      ;Start-Process "https://www.gog.com/galaxy"
+                     ;Start-Process "https://www3.oculus.com/en-us/setup/"
 
                      # "Misc"
                      ;choco install -y Fitbit.Connect
