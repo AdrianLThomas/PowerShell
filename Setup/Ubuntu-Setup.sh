@@ -19,7 +19,14 @@ sudo apt-get -y install \
 	redshift \
 	redshift-gtk \
 	spotify-client \
+	steam \
 	virtualbox
+
+# None apt-get installs
+# VS Code
+wget http://go.microsoft.com/fwlink/?LinkID=760868 -O /tmp/vscode.deb
+sudo dpkg -i /tmp/vscode.deb
+sudo apt-get install -f -y
 
 # To automate at a later date:
 # nVidia Drivers
