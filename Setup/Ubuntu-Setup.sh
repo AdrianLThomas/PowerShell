@@ -18,6 +18,8 @@ sudo apt-get -y install \
 	git \
 	google-chrome-stable \
 	mpv \
+	nodejs \
+	npm \
 	pinta \
 	redshift \
 	redshift-gtk \
