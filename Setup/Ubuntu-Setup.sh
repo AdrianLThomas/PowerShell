@@ -15,6 +15,7 @@ sudo apt-get -y --force-yes update
 sudo apt-get -y --force-yes upgrade
 sudo apt-get -y install \
 	docker-engine \
+	docker-compose \
 	git \
 	google-chrome-stable \
 	mpv \
@@ -33,6 +34,10 @@ if ! hash code 2>/dev/null; then
 	wget http://go.microsoft.com/fwlink/?LinkID=760868 -O /tmp/vscode.deb
 	sudo dpkg -i /tmp/vscode.deb
 	sudo apt-get install -f -y
+fi
+if ! hash docker-compose 2>/dev/null; then
+	curl -L "https://github.com/docker/compose/releases/download/1.10.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+	chmod +x /usr/local/bin/docker-compose
 fi
 
 # Configuration
