@@ -30,6 +30,9 @@ sudo apt-get -y install \
 	steam \
 	virtualbox
 
+# npm Apps
+npm install -g yo
+
 # None apt-get installs
 # VS Code
 if ! hash code 2>/dev/null; then
