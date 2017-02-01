@@ -31,7 +31,9 @@ sudo apt-get -y install \
 	virtualbox
 
 # npm Apps
-npm install -g yo
+sudo npm install -g n
+sudo n stable
+sudo npm install -g yo
 
 # None apt-get installs
 # VS Code
