@@ -43,7 +43,7 @@ if ! hash code 2>/dev/null; then
 	sudo apt-get install -f -y
 fi
 if ! hash docker-compose 2>/dev/null; then
-	curl -L "https://github.com/docker/compose/releases/download/1.10.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+	curl -L https://github.com/docker/compose/releases/download/1.17.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
 	chmod +x /usr/local/bin/docker-compose
 fi
 
@@ -52,5 +52,4 @@ sudo usermod -aG docker $(whoami) # Stop requiring sudo for docker
 
 # To automate at a later date:
 # nVidia Drivers
-# CrashPlan - Need to configure engine start https://support.code42.com/CrashPlan/4/Troubleshooting/Stopping_And_Starting_The_CrashPlan_Service
 # Spotify - apply this fix: https://www.reddit.com/r/spotify/comments/3cear9/linux_spotify_scaling/
