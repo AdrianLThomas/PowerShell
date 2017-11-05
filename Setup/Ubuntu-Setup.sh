@@ -55,3 +55,8 @@ sudo usermod -aG docker $(whoami) # Stop requiring sudo for docker
 # To automate at a later date:
 # nVidia Drivers
 # Spotify - apply this fix: https://www.reddit.com/r/spotify/comments/3cear9/linux_spotify_scaling/
+# Dotnet Core: 
+	- https://www.microsoft.com/net/download/thank-you/dotnet-sdk-2.0.2-linux-x64-binaries
+	- sudo apt-get install libunwind8
+	- gedit ~/.profile 
+	- add to the bottom of the file:  export PATH=$PATH:$HOME/dotnet
