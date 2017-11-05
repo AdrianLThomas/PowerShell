@@ -28,12 +28,14 @@ sudo apt-get -y install \
 	redshift-gtk \
 	spotify-client \
 	steam \
-	virtualbox
+	virtualbox \ 
+	htop
 
 # npm Apps
 sudo npm install -g n
 sudo n stable
 sudo npm install -g yo
+sudo npm install -g @angular/cli
 
 # None apt-get installs
 # VS Code
