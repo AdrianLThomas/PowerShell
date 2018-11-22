@@ -22,6 +22,7 @@ $installCommands = #BEGIN
                      ;choco install -y treesizefree
                      ;choco install -y vmware-workstation-player
                      ;choco install -y speedfan
+                     ;choco install -y dropbox
 
                      # "Audio/Video"
                      ;choco install -y foobar2000
