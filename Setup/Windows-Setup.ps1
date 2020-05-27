@@ -43,12 +43,13 @@ $installCommands = #BEGIN
                      ;New-LocalUser -Name "Gaming" -Description "Gaming account" -NoPassword
 
                      # "Gaming"
-                     ;choco install -y steam
-                     ;choco install -y origin
-                     ;choco install -y battle.net
-                     ;choco install -y epicgameslauncher
-                     ;choco install -y filezilla
-                     ;choco install -y goggalaxy
+                    #  Install manually? Want to change to large disk..
+                    #  ;choco install -y steam
+                    #  ;choco install -y origin
+                    #  ;choco install -y battle.net
+                    #  ;choco install -y epicgameslauncher
+                    #  ;choco install -y filezilla
+                    #  ;choco install -y goggalaxy
                      ;Start-Process "http://support.logitech.com/software/gaming-software" #For the G27
                      ;Start-Process "https://www3.oculus.com/en-us/setup/"
 
