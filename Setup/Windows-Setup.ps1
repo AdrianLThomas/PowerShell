@@ -21,14 +21,26 @@ $installCommands = #BEGIN
                      ;choco install -y speedfan
                      ;choco install -y treesizefree
                      ;choco install -y dropbox
+                     ;choco install -y nordvpn
+                     ;choco install -y qbittorrent
+                     ;choco install -y docker-desktop
 
                      # "Audio/Video"
                      ;choco install -y foobar2000
                      ;choco install -y vlc
                      ;choco install -y spotify
 
+                     # "Dev"
+                     ;choco install -y vscode
+                     ;dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+                     ;Start-Process "https://docs.microsoft.com/en-us/windows/wsl/install-win10"
+                     ;Start-Process "https://github.com/ohmyzsh/ohmyzsh" # ZSH_THEME="fino-time"
+
                      # "Drivers"
                      ;choco install -y geforce-experience
+
+                     # Create gaming account
+                     ;New-LocalUser -Name "Gaming" -Description "Gaming account" -NoPassword
 
                      # "Gaming"
                      ;choco install -y steam
@@ -39,6 +51,7 @@ $installCommands = #BEGIN
                      ;choco install -y goggalaxy
                      ;Start-Process "http://support.logitech.com/software/gaming-software" #For the G27
                      ;Start-Process "https://www3.oculus.com/en-us/setup/"
+
 '
 #END
 
