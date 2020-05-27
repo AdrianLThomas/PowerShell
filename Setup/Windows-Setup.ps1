@@ -9,7 +9,6 @@ $ErrorActionPreference = "Stop"
 $installCommands = #BEGIN
 '
                      # "Utils"
-                      choco install -y avirafreeantivirus
                      ;choco install -y backblaze
                      ;choco install -y malwarebytes
                      ;choco install -y Firefox
@@ -19,9 +18,8 @@ $installCommands = #BEGIN
                      ;choco install -y putty
                      ;choco install -y paint.net
                      ;choco install -y cpu-z
-                     ;choco install -y treesizefree
-                     ;choco install -y vmware-workstation-player
                      ;choco install -y speedfan
+                     ;choco install -y treesizefree
                      ;choco install -y dropbox
 
                      # "Audio/Video"
@@ -36,17 +34,16 @@ $installCommands = #BEGIN
                      ;choco install -y steam
                      ;choco install -y origin
                      ;choco install -y battle.net
-                     ;Start-Process "http://support.logitech.com/software/gaming-software" #For the G27
+                     ;choco install -y epicgameslauncher
+                     ;choco install -y filezilla
                      ;choco install -y goggalaxy
+                     ;Start-Process "http://support.logitech.com/software/gaming-software" #For the G27
                      ;Start-Process "https://www3.oculus.com/en-us/setup/"
-
 '
 #END
 
 Write-Host "Press enter to begin or Ctrl+C to cancel"
 Read-Host
-
-iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))
 
 foreach($command in $installCommands){
     Invoke-Expression $command
